@@ -247,7 +247,7 @@ async function handleSetup(interaction) {
             'Panel limit reached',
             ErrorTypes.VALIDATION,
             'Your guild has reached the maximum of 5 reaction role panels. Delete an existing panel to create a new one.',
-            { maxPanels: 5, currentPanels: existingPanels.length }
+            { maxPanels: 10, currentPanels: existingPanels.length }
         );
     }
     
