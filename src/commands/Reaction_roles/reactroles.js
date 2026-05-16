@@ -56,34 +56,6 @@ export default {
                         .setDescription('Fifth role to add')
                         .setRequired(false)
                 )
-
-                .addRoleOption(option =>
-                    option.setName('role6')
-                        .setDescription('Sixth role to add')
-                        .setRequired(false)
-                )
-                .addRoleOption(option =>
-                    option.setName('role7')
-                        .setDescription('Seventh role to add')
-                        .setRequired(false)
-                )
-                .addRoleOption(option =>
-                    option.setName('role8')
-                        .setDescription('Eighth role to add')
-                        .setRequired(false)
-                )
-                .addRoleOption(option =>
-                    option.setName('role9')
-                        .setDescription('Ninth role to add')
-                        .setRequired(false)
-                )
-                .addRoleOption(option =>
-                    option.setName('role10')
-                        .setDescription('Tenth role to add')
-                        .setRequired(false)
-                )
-                
-
                 
         )
         .addSubcommand(subcommand =>
@@ -247,7 +219,7 @@ async function handleSetup(interaction) {
             'Panel limit reached',
             ErrorTypes.VALIDATION,
             'Your guild has reached the maximum of 5 reaction role panels. Delete an existing panel to create a new one.',
-            { maxPanels: 10, currentPanels: existingPanels.length }
+            { maxPanels: 5, currentPanels: existingPanels.length }
         );
     }
     
